@@ -3,7 +3,7 @@ class CreateAuthors < ActiveRecord::Migration[7.0]
     create_table :authors, id: false, primary_key: :id do |t|
       t.integer :id, null: false
       t.string :nome
-      t.integer :data
+      t.bigint :data
       t.string :biografia
       t.string :luogonascita
       t.string :immagineartista
