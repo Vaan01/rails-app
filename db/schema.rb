@@ -14,7 +14,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_08_185139) do
   create_table "authors", id: false, force: :cascade do |t|
     t.integer "id", null: false
     t.string "nome"
-    t.integer "data"
+    t.bigint "data"
     t.string "biografia"
     t.string "luogonascita"
     t.string "immagineartista"
@@ -34,7 +34,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_08_185139) do
   create_table "works", id: false, force: :cascade do |t|
     t.integer "id", null: false
     t.string "nome"
-    t.integer "data"
+    t.bigint "data"
     t.string "descrizione"
     t.string "immagini"
     t.integer "idstanza"
