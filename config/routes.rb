@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get '/opere/:id', to: "opere#get_opera_by_id"
   get '/stanze/:id', to: "stanza#get_stanza_by_id"
 
+  get '/guestbooks', to: "guestbooks#index"
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
