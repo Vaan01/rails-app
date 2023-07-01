@@ -8,6 +8,9 @@ class GuestbooksController < ApplicationController
     render json: @guestbooks
   end
 
+  def remove
+    Guestbook.delete_all
+  end
 
   # GET /guestbooks/1
   def show
