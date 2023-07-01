@@ -65,11 +65,11 @@ class ArtistiController < ApplicationController
     end
 
     if Author.where(id:2017).empty?
-      Author.new(id: 2018, nome: "Pablo Picasso", data: -2782860596000, biografia: "Pablo Ruiz y Picasso, semplicemente noto come Pablo Picasso (Malaga, 25 ottobre 1881 – Mougins, 8 aprile 1973), è stato un pittore, scultore e litografo spagnolo, tra i più influenti del XX secolo. Snodo cruciale tra la tradizione ottocentesca e l'arte contemporanea, Picasso è stato un artista innovativo e poliedrico, che ha lasciato un segno indelebile nella storia dell'arte per esser stato il fondatore, insieme a Georges Braque, del Cubismo. Dopo aver trascorso una gioventù burrascosa, ben espressa nei quadri dei cosiddetti periodi blu e rosa, a partire dagli anni venti del Novecento conobbe una rapidissima fama; tra le sue opere universalmente conosciute vi sono Les demoiselles d'Avignon (1907) e Guernica (1937).", luogonascita: "Malaga", immagineartista: "").save
+      Author.new(id: 2017, nome: "Pablo Picasso", data: -2782860596000, biografia: "Pablo Ruiz y Picasso, semplicemente noto come Pablo Picasso (Malaga, 25 ottobre 1881 – Mougins, 8 aprile 1973), è stato un pittore, scultore e litografo spagnolo, tra i più influenti del XX secolo. Snodo cruciale tra la tradizione ottocentesca e l'arte contemporanea, Picasso è stato un artista innovativo e poliedrico, che ha lasciato un segno indelebile nella storia dell'arte per esser stato il fondatore, insieme a Georges Braque, del Cubismo. Dopo aver trascorso una gioventù burrascosa, ben espressa nei quadri dei cosiddetti periodi blu e rosa, a partire dagli anni venti del Novecento conobbe una rapidissima fama; tra le sue opere universalmente conosciute vi sono Les demoiselles d'Avignon (1907) e Guernica (1937).", luogonascita: "Malaga", immagineartista: "").save
     end
 
     if Author.where(id:2018).empty?
-      Author.new(id: 2019, nome: "Juan Gris", data: -2612220596000, biografia: "Juan Gris, nome d'arte di José Victoriano González-Pérez (Madrid, 23 marzo 1887 – Boulogne-sur-Seine, 11 maggio 1927), è stato un pittore spagnolo, esponente del Cubismo.", luogonascita: "Madrid", immagineartista: "").save
+      Author.new(id: 2018, nome: "Juan Gris", data: -2612220596000, biografia: "Juan Gris, nome d'arte di José Victoriano González-Pérez (Madrid, 23 marzo 1887 – Boulogne-sur-Seine, 11 maggio 1927), è stato un pittore spagnolo, esponente del Cubismo.", luogonascita: "Madrid", immagineartista: "").save
     end
 
     render :json => {"artisti" => Author.all, "status" => 200}
