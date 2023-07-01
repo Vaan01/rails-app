@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :guestbooks
   get '/artisti', to: "artisti#index"
   get '/opere', to: "opere#index"
   get '/stanze', to: "stanza#index"
