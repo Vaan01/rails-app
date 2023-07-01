@@ -46,7 +46,7 @@ class GuestbooksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def guestbook_params
-      params.permit(:messaggio, :foto)
+      params.permit(:nome, :messaggio, :foto)
       
     end
 end
