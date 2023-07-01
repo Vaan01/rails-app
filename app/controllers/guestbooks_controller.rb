@@ -8,6 +8,7 @@ class GuestbooksController < ApplicationController
     render json: @guestbooks
   end
 
+
   # GET /guestbooks/1
   def show
     render json: @guestbook
