@@ -1,12 +1,12 @@
 CarrierWave.configure do |config|
   config.fog_credentials = {
-    provider:              'AWS',                        # required
-    aws_access_key_id:     'xxx',                        # required unless using use_iam_profile
-    aws_secret_access_key: 'yyy',                        # required unless using use_iam_profile
-    use_iam_profile:       true,                         # optional, defaults to false
-    region:                'eu-north-1',                 # optional, defaults to 'us-east-1'
-    host:                  's3.example.com',             # optional, defaults to nil
-    endpoint:              'https://s3.example.com:8080' # optional, defaults to nil
+    provider:              'AWS',                                         # required
+    aws_access_key_id:     'AKIASBGGNJXLI4UOWDDO',                        # required unless using use_iam_profile
+    aws_secret_access_key: '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',    # required unless using use_iam_profile
+    use_iam_profile:       false,                                         # optional, defaults to false
+    region:                'eu-north-1',                                  # optional, defaults to 'us-east-1'
+    host:                  's3.example.com',                              # optional, defaults to nil
+    endpoint:              'https://s3.example.com:8080'                  # optional, defaults to nil
   }
   config.fog_directory  = 'unibucketapi'                                        # required
   config.fog_public     = true                                                  # optional, defaults to true
