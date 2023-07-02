@@ -182,6 +182,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   carrierwave
+  fog-aws
   debug
   pg
   psych (< 4)
