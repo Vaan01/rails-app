@@ -1,8 +1,8 @@
 CarrierWave.configure do |config|
   config.fog_credentials = {
     provider:              'AWS',                                         # required
-    aws_access_key_id:     'AKIASBGGNJXLI4UOWDDO',                        # required unless using use_iam_profile
-    aws_secret_access_key: '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',    # required unless using use_iam_profile
+    aws_access_key_id:     ENV['ACCESS_KEY'],                             # required unless using use_iam_profile
+    aws_secret_access_key: ENV['SECRET_KEY'],                             # required unless using use_iam_profile
     region:                'eu-north-1',                                  # optional, defaults to 'us-east-1'
   }
   config.fog_directory  = 'unibucketapi'                                        # required
